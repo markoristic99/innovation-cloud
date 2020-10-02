@@ -1,3 +1,7 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+
+  root 'signups#new'
+  get 'signups/new'
+  get 'pages/thanks' => 'pages#thanks'
+  resources :signups
 end
